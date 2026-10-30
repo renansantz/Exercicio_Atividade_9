@@ -1,0 +1,21 @@
+/* Comportamento Utilitário: Permite que a página deslize suavemente ao clicar no menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Limita a largura do texto na secção inicial para leitura confortável */
+.hero-text {
+    max-width: 600px;
+}
+
+/* === NOVAS CORES PERSONALIZADAS === */
+
+/* Cor da barra de navegação (Substitui o bg-dark padrão) */
+#main-navbar {
+    background-color: #063bad; /* Azul profissional */
+}
+
+/* Cor do rodapé */
+#main-footer {
+    background-color: #121824; /* Azul marinho muito escuro */
+}

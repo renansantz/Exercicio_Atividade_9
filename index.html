@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Profissional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- REQUISITO 1: Navbar -->
+    <!-- BREAKPOINTS E RESPONSIVIDADE: A classe 'navbar-expand-lg' diz que o menu só deve colapsar (virar o botão hambúrguer) em ecrãs menores que "Large" (computadores). -->    
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <!-- CONTAINER: Centraliza o conteúdo e cria margens laterais automáticas -->
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- REQUISITO 2: Hero Section -->
+    <section id="inicio" class="bg-light text-dark py-5 text-center mt-4">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Olá! Sou Renan Santos</h1>
+            <h2 class="h3 text-secondary mb-3">Desenvolvedor Web</h2>
+            <p class="lead mb-4 mx-auto hero-text">
+                Bem-vindo ao meu portfólio! Aqui você encontrará meus projetos, habilidades e informações de contato. Sinta-se à vontade para explorar e conhecer mais sobre o meu trabalho.
+            </p>
+            <a href="#projetos" class="btn btn-primary btn-lg">Ver os Meus Projetos</a>
+        </div>
+    </section>
+
+    <!-- REQUISITO 3: Sobre Mim -->
+    <section id="sobre" class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4 text-primary">Sobre Mim</h2>
+                    <p class="lead text-muted">
+                        Sou um desenvolvedor web com experiência em criar aplicações modernas e responsivas. Tenho conhecimento em HTML, CSS, JavaScript e Python.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REQUISITO 4: Habilidades Técnicas -->
+    <section id="habilidades" class="bg-light py-5 text-center">
+        <div class="container py-4">
+            <h2 class="mb-5 text-primary">Habilidades Técnicas</h2>
+            
+            <!-- GRID SYSTEM DO BOOTSTRAP:
+                 'row' cria a linha. 
+                 'col-6' significa que em telemóveis o item ocupa 6 de 12 espaços (mostra 2 itens por linha).
+                 'col-md-3' aplica responsividade: em tablets e computadores (Medium), ocupa 3 de 12 espaços (mostra 4 itens por linha). 
+                 'g-4' é uma Classe Utilitária para espaçamento (gap) entre os itens. -->
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded bg-white shadow-sm"><h5 class="mb-0">HTML</h5></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded bg-white shadow-sm"><h5 class="mb-0">CSS</h5></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded bg-white shadow-sm"><h5 class="mb-0">JavaScript</h5></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded bg-white shadow-sm"><h5 class="mb-0">Python</h5></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REQUISITO 5: Projetos -->
+    <section id="projetos" class="py-5">
+        <div class="container py-4">
+            <h2 class="mb-5 text-center text-primary">Os Meus Projetos</h2>
+            <div class="row g-4">
+                
+                <!-- COMPONENTE CARDS: 
+                     'card' cria a caixa base estruturada. 
+                     'h-100' força todos os cartões a terem a mesma altura. 
+                     'd-flex flex-column' e 'mt-auto' (no botão) garantem que o botão fique sempre preso no fundo do cartão. -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Sistema de Gerenciamento</h5>
+                            <p class="card-text text-muted">Aplicação web para gerenciamento de tarefas e colaboração em equipe.</p>
+                            <a href="#" class="btn btn-outline-primary mt-auto">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Currículo Web</h5>
+                            <p class="card-text text-muted">Currículo profissional desenvolvido como projeto pessoal, utilizando tecnologias web modernas.</p>
+                            <a href="#" class="btn btn-outline-primary mt-auto">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Calculadora</h5>
+                            <p class="card-text text-muted">Aplicação web de calculadora com funções básicas e avançadas.</p>
+                            <a href="#" class="btn btn-outline-primary mt-auto">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- REQUISITO 6: Formulário de Contato -->
+    <section id="contato" class="bg-light py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <h2 class="mb-4 text-center text-primary">Entre em Contato</h2>
+                    
+                    <!-- COMPONENTES DE FORMULÁRIO:
+                         A classe 'form-control' aplica o design padrão do Bootstrap aos inputs (borda suave, foco azul). -->
+                    <form class="bg-white p-4 rounded shadow-sm border">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Introduza o seu nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Introduza o seu e-mail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva a sua mensagem aqui..." required></textarea>
+                        </div>
+                        
+                        <!-- A classe 'd-grid' faz o botão ocupar 100% da largura, ótimo para responsividade em telemóveis. -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REQUISITO 7: Footer -->
+    <footer id="main-footer" class="text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Renan Santos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
